@@ -1,0 +1,93 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Environment Files
+.env
+.env.*
+!.env.example
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mypy
+.mypy_cache/
+
+# Ruff
+.ruff_cache/
+
+# =========================
+# FastAPI
+# =========================
+logs/
+*.log
+
+# =========================
+# Alembic
+# =========================
+alembic/versions/*.pyc
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# MacOS
+# =========================
+.DS_Store
+
+# =========================
+# Node
+# =========================
+node_modules/
+dist/
+build/
+
+# Vite
+.vite/
+
+# React
+coverage/
+
+# =========================
+# Docker
+# =========================
+docker-data/
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.swp
+*.swo
+
+# =========================
+# Kafka
+# =========================
+kafka-logs/
+
+# =========================
+# Local Database
+# =========================
+*.sqlite
+*.db
+
+# =========================
+# Secrets
+# =========================
+secrets/
+*.pem
+*.key
+*.crt
