@@ -1,0 +1,28 @@
+import { Navigate } from "react-router-dom";
+import { useAuthStore } from "@/store/authStore";
+
+export function ProtectedRoute({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+
+  if (import.meta.env.DEV) {
+    return children;
+  }
+
+  const token = useAuthStore(
+    (s) => s.token
+  );
+
+  if (!token) {
+    return (
+      <Navigate
+        to="/login"
+        replace
+      />
+    );
+  }
+
+  return children;
+}
